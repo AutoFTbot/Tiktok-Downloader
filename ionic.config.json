@@ -1,0 +1,12 @@
+{
+  "appId": "com.Aagin.tiktokdownloader",
+  "appName": "TikTok Downloader",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "author": "Aagin"
+}

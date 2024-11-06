@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">TikTok Downloader</string>
+    <string name="title_activity_main">TikTok Downloader</string>
+    <string name="package_name">com.example.tiktokdownloader</string>
+    <string name="custom_url_scheme">com.example.tiktokdownloader</string>
+</resources>

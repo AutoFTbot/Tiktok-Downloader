@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      TikTok Downloader
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Download Video TikTok</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">TikTok Video URL</ion-label>
+        <ion-input [(ngModel)]="videoUrl"></ion-input>
+      </ion-item>
+      <ion-button expand="full" color="secondary" (click)="getVideoData()">
+        <ion-icon name="download-outline" slot="start"></ion-icon>
+        Download Video
+      </ion-button>
+      <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list *ngIf="videoData">
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img [src]="videoData.thumbnail" alt="Thumbnail">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ videoData.title }}</h2>
+        <p>{{ videoData.title_audio }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<footer style="text-align: center; margin-top: 20px;">
+  <p>Created by Aagin</p>
+</footer>
